@@ -246,8 +246,9 @@ Use copy to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(array) {
+ let copy = [...array];
+ return copy
 }
 
 
