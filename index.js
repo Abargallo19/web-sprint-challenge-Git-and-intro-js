@@ -218,7 +218,7 @@ console.log(artists[2].bio);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
-console.log(artists[8].name)
+artists[8].name = 'Vincent Van Gogh'
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -234,7 +234,7 @@ function getArtistByIndex(array, index) {
   return `the artist at index ${index} is ${array[index].name}`
 }
 
-console.log(getArtistByIndex(artists, 0))
+
 
 
 
@@ -262,8 +262,11 @@ Use removeArtist to do the following:
 5. Return the resulting copied array
 🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+let artistCopy = 9
+
+function removeArtist(array, index) {
+  array.splice(array[index], 1);
+  return array.length
 }
 
 
