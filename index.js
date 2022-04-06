@@ -251,11 +251,11 @@ function listOfNames(array) {
 const copy = [...array]
  //for loop over copy
 for(let i = 0; i < copy.length; i++){
-let names = copy[i].name;
-return names;
+  copy[i] = copy[i].name
 }
+return copy
 }
-
+console.log('TASK 4', listOfNames(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
