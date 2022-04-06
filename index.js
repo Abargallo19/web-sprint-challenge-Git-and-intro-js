@@ -252,8 +252,9 @@ const copy = [...array]
  //for loop over copy
 for(let i = 0; i < copy.length; i++){
 const names = copy[i].name;
-return names;
+
 }
+return copy;
 }
 
 
@@ -274,7 +275,7 @@ function removeArtist(array, index) {
   //remove artist from copy of array
   //return copy array updated
   copy.splice(copy[index], 1);
-  return copy
+  return copy;
 }
 
 
@@ -297,14 +298,14 @@ Use addArtist to do the following:
 
 function addArtist(array, name, years, genre, nationality, bio) {
   const obj = {
-    name: 'Allesandria',
-    years: '1992 - present',
-    genre: 'web design',
-    nationality: 'Puerto Rican',
-    bio: "I love to code!"
-  }
+    name: name,
+    years: years,
+    genre: genre,
+    nationality: nationality,
+    bio: bio
+  };
   array.push(obj);
-  return array
+  return array;
  }
 
 
