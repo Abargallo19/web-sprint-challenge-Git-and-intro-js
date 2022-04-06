@@ -251,10 +251,9 @@ function listOfNames(array) {
 const copy = [...array]
  //for loop over copy
 for(let i = 0; i < copy.length; i++){
-const names = copy[i].name;
-
+let names = copy[i].name;
+return names;
 }
-return copy;
 }
 
 
